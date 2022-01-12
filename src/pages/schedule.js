@@ -4,8 +4,11 @@ import  Layout  from '../components/layout'
 
 export default function Home(){
   return(
-    <Layout header='Главная'>
+    <Layout header='Занятия'>
+      <div>
+        Я не знаю, что будет на этой вкладке
 
+      </div>
 
 
     </Layout>

@@ -1,0 +1,50 @@
+.topmenu{
+  position: fixed;
+  z-index: 1;
+  width: 110%;
+  background: #FFFFFF;
+  color: black;
+  margin: -10px;
+  padding-top: 10px;
+}
+
+.topmenu ul{
+  list-style: none;
+
+}
+
+.topmenu li{
+  float: left;
+}
+
+.topmenu p{
+  position: relative;
+}
+
+.children{
+  padding-top: 180px;
+  width: 80%;
+  padding-left: 150px;
+  padding-bottom: 100%;
+}
+
+.bottom_page{
+  background: rgba(18, 14, 33, 0.9);
+
+  width: 101.5%;
+  float: left;
+  margin: -10px;
+  color: #4E9600;
+  font-size: 30px;
+  padding: -30px;
+}
+
+.bottom_page ul{
+  list-style: none;
+}
+
+.bottom_page li{
+  float: left;
+  margin-left: 12%;
+  text-align: center;
+}

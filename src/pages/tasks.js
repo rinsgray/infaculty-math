@@ -4,8 +4,10 @@ import  Layout  from '../components/layout'
 
 export default function Home(){
   return(
-    <Layout header='Главная'>
-
+    <Layout header='Сборник задач'>
+      <div>
+        Тут блоки по ЕГЭшкам и ОГЭшкам
+      </div>
 
 
     </Layout>
