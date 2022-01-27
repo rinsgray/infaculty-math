@@ -20,7 +20,6 @@ export default function Layout(props) {
     <ul>
 
     <li><Link to = '/materials/' getProps={isActive}><p>Материалы</p></Link></li>
-    <li><Link to = '/schedule/' getProps={isActive}><p>Занятия</p></Link></li>
     <li><Link to = '/tasks/' getProps={isActive}><p>Сборник задач</p></Link></li>
     <li><Link to = '/articles/' getProps={isActive}><p>Статьи</p></Link></li>
 

@@ -1,0 +1,13 @@
+.refblock {
+  background: #FFFFFF;
+  list-style: none;
+  padding-top: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  padding-top: 15px;
+  line-height: 1.5;
+}

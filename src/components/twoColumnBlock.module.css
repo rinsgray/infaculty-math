@@ -3,7 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  background: #FFFFE0
+  background: #FFFFFF
 }
 
 .column {
@@ -12,7 +12,7 @@
   flex-basis: 100%;
   margin: 15px;
   padding: 5px;
-  background: #E0FFFF
+  background: #FFFFFF
 }
 
 
