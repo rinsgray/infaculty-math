@@ -1,0 +1,23 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background: #FFFFFF
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin: 15px;
+  padding: 5px;
+  background: #FFFFFF
+}
+
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1
+  }
+}

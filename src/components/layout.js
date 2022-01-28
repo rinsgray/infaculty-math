@@ -13,7 +13,7 @@ export default function Layout(props) {
     <RowBlock
     left =
     <div class={layoutStyles.topmenu}>
-    <Header headerText="infacultyMath" />
+    <Header headerText="InfacultyMath" />
     </div>
     right =
     <div className={layoutStyles.topmenu}>
@@ -27,7 +27,9 @@ export default function Layout(props) {
     </ul>
     </div>
     />
+
     <div className={layoutStyles.children}>
+      <h1>{props.header}</h1>
       {props.children}
     </div>
     <div className={layoutStyles.bottom_page}>

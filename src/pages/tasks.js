@@ -6,7 +6,7 @@ import  InsideBlock  from '../components/insideBlock'
 
 export default function Home(){
   return(
-    <Layout header='Сборник задач'>
+    <Layout header='Сборник&nbsp;задач'>
     <RowBlock
       blockHeader = 'ЕГЭ'
       left = <div>
