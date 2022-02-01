@@ -48,6 +48,7 @@ export default function Home(){
         <li>Параметр
           <ol type='a'>
             <li><a href='https://drive.google.com/file/d/1UBETa_y77iLMwuzvHU51JAcR76WuIToP/view?usp=sharing'>Линейные и сводимые к ним уравнения и неравенства с параметром </a></li>
+            <li><a href='https://drive.google.com/file/d/1ZfonF43xAYlEWL1w_j9HT0EMhiFY4lAk/view?usp=drivesdk'>Геометрические идеи</a> </li>
           </ol>
         </li>
       </ol>
@@ -60,7 +61,7 @@ export default function Home(){
       <ul type='disk'>
         <li><a href = 'https://drive.google.com/open?id=1W8uWyF12oCb5e7NFzReznCdbU7qbdtXz&authuser=bjashon%40gmail.com&usp=drive_fs'>Неравенства с модулем</a></li>
         <li><a href = 'https://drive.google.com/file/d/1Zh3s5eTqJe6Ndy6hKErLIZ8YErwhAe8g/view?usp=sharing'>Логарифмические неравенства</a></li>
-        <li>3</li>
+        <li><a href='https://drive.google.com/file/d/1YiPzwjN9t5FbjFwYH1iaO5NtFXOHxfTT/view?usp=sharing'>Иррациональные неравенства</a></li>
         <li>4</li>
         <li>5</li>
       </ul>

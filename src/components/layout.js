@@ -5,28 +5,47 @@ import Header from "./header"
 import RowBlock from "./twoColumnBlock"
 
 export default function Layout(props) {
-  function isActive( {isCurrent} ) {
-    return isCurrent ? {className: "layoutStyles.active"} : null
+  const [menuActive, setMenuActive] = React.useState(false)
+  const [hamClass, setHamClass] = React.useState(layoutStyles.hamburger)
+  const [menuClass, setMenuClass] = React.useState(layoutStyles.navmenu)
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+    if (menuActive){
+      setHamClass(layoutStyles.cross)
+      setMenuClass(layoutStyles.activemenu)
+    }
+    else {
+      setHamClass(layoutStyles.hamburger)
+      setMenuClass(layoutStyles.navmenu)
+    }
   }
-  return (
+  const closeMenu = () =>{
+    setHamClass(layoutStyles.hamburger)
+    setMenuClass(layoutStyles.navmenu)
+  }
+
+
+    return (
     <div>
-    <RowBlock
-    left =
-    <div class={layoutStyles.topmenu}>
-    <Header headerText="InfacultyMath" />
-    </div>
-    right =
-    <div className={layoutStyles.topmenu}>
-    <ul>
 
-    <li><Link to = '/materials/' getProps={isActive}><p>Материалы</p></Link></li>
-    <li><Link to = '/tasks/' getProps={isActive}><p>Сборник задач</p></Link></li>
-    <li><Link to = '/articles/' getProps={isActive}><p>Статьи</p></Link></li>
+    <nav className={layoutStyles.navbar}>
 
 
-    </ul>
-    </div>
-    />
+      <Header headerText="InfacultyMath" />
+      <ul className={menuClass}>
+      <li><Link to = '/' onClick={closeMenu}><p>Главная</p></Link></li>
+      <li><Link to = '/articles/' onClick={closeMenu}><p>Статьи</p></Link></li>
+      <li><Link to = '/tasks/' onClick={closeMenu}><p>Сборник задач</p></Link></li>
+      <li><Link to = '/materials/' onClick={closeMenu}><p>Материалы</p></Link></li>
+
+
+      </ul>
+      <div className={hamClass} onClick={toggleMenu}>
+        <span className={layoutStyles.bar}></span>
+        <span className={layoutStyles.bar}></span>
+        <span className={layoutStyles.bar}></span>
+      </div>
+    </nav>
 
     <div className={layoutStyles.children}>
       <h1>{props.header}</h1>

@@ -3,8 +3,10 @@ import * as React from 'react'
 import  RowBlock  from '../components/twoColumnBlock'
 import  InsideBlock  from '../components/insideBlock'
 import  Layout  from '../components/layout'
-import  ImageBlock  from '../components/threeColumnBlock'
+import  ImageBlock  from '../components/multiColumnBlock'
 import  ImageLib  from '../components/imageLib'
+import  ImageWrap  from '../components/imageWrapper'
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function Home(){
   return(
@@ -49,11 +51,60 @@ export default function Home(){
           </ul>
           </InsideBlock>
         />
-        <ImageLib>
+        <h2>Памятки</h2>
+        <p>Листочки - краткие яркие памятки. К некоторым из их прилагаются лекции. Памятками стоит пользоваться, если всё что написанно на них понятно. </p>
+        <ImageLib
+        header = 'Планиметрия'>
+          <ImageBlock
+            c1 = <ImageWrap><StaticImage src = '../images/углы.png' /></ImageWrap>
+            c2 = <ImageWrap><StaticImage src = '../images/равенство_треугольников.png' /></ImageWrap>
+            c3 = <ImageWrap><StaticImage src = '../images/подобие_треугольников.png' /></ImageWrap>
+            c4 = <ImageWrap><StaticImage src = '../images/четырёхугольники.png' /></ImageWrap>
+          />
+          <ImageBlock
+            c1 = <ImageWrap><StaticImage src = '../images/замечательные точки.png' /></ImageWrap>
+            c2 = <ImageWrap><StaticImage src = '../images/окружность.png' /></ImageWrap>
+            c3 = <ImageWrap><StaticImage src = '../images/Прямоугольный треугольник.png' /></ImageWrap>
+            c4 = <ImageWrap><StaticImage src = '../images/Площади треугольников.png' /></ImageWrap>
+          />
+          <ImageBlock
+            c1 = <ImageWrap><StaticImage src = '../images/Теорема Синусов и Косинусов.png' /></ImageWrap>
+          />
+        </ImageLib>
+        <ImageLib
+        header = 'Алгебра'>
+          <ImageBlock
+            c1 = <ImageWrap><StaticImage src = '../images/квадраты.png' /></ImageWrap>
+            c2 = <ImageWrap><StaticImage src = '../images/прогрессии.png' /></ImageWrap>
+            c3 = <ImageWrap><StaticImage src = '../images/Квадратные уравнения.png' /></ImageWrap>
+            c4 = <ImageWrap><StaticImage src = '../images/Графики. Парабола.png' /></ImageWrap>
+          />
+          <ImageBlock
+            c1 = <ImageWrap><StaticImage src = '../images/Графики. Прямая.png' /></ImageWrap>
+            c2 = <ImageWrap><StaticImage src = '../images/степени.png' /></ImageWrap>
+            c3 = <ImageWrap><StaticImage src = '../images/ОДЗ.png' /></ImageWrap>
+            c4 = <ImageWrap><StaticImage src = '../images/Параметр1.png' /></ImageWrap>
+          />
+          <ImageBlock
+            c1 = <ImageWrap><StaticImage src = '../images/Логарифм1новые.png' /></ImageWrap>
+            c2 = <ImageWrap><StaticImage src = '../images/Логарифм-2.png' /></ImageWrap>
+            c3 = <ImageWrap><StaticImage src = '../images/проиводная 1.png' /></ImageWrap>
+            c4 = <ImageWrap><StaticImage src = '../images/проиводная 2.png' /></ImageWrap>
+          />
+          <ImageBlock
+            c1 = <ImageWrap><StaticImage src = '../images/Тригонометрия 1.png' /></ImageWrap>
+            c2 = <ImageWrap><StaticImage src = '../images/Тригонометрия 2.png' /></ImageWrap>
+            c3 = <ImageWrap><StaticImage src = '../images/Подбираемые выплаты.png' /></ImageWrap>
+            c4 = <ImageWrap><StaticImage src = '../images/модуль.png' /></ImageWrap>
+          />
+        </ImageLib>
+        <ImageLib
+        header = 'Стереометрия'>
         <ImageBlock
-          left = <p></p>
-          mid = <p></p>
-          right = <p></p>
+
+          c2 = <ImageWrap><StaticImage src = '../images/Правильные многогранники.png' /></ImageWrap>
+          c3 = <ImageWrap><StaticImage src = '../images/Стереометрия_большие файлы.png' /></ImageWrap>
+
         />
         </ImageLib>
     </Layout>

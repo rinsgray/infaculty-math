@@ -1,5 +1,7 @@
 .children{
+
   padding-top: 20px;
-  width: 80%;
-  padding-left: 100px;
+  width: 100%;
+  padding-left: 0px;
+  align-items: center;
 }

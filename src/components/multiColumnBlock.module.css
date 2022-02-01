@@ -1,3 +1,7 @@
+h3 {
+  font-size: 14px;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -16,7 +20,7 @@
 }
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .column {
     flex: 1
   }
