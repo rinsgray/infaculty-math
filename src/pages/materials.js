@@ -35,6 +35,11 @@ export default function Home(){
         <li><a href='https://www.wolframalpha.com/'>https://www.wolframalpha.com/</a> - WolframAlpha, БД+калькулятор</li>
         </ol>
       </RefBlock>
+
+      <RefBlock rheader='Прочее'>
+        <ol>
+          <li> <a href='http://www.hpmor.com/'>http://www.hpmor.com/</a> - Гарри Поттер и методы рационального мышления. Настоятельно рекомендуем. ( есть на русском <a href='https://hpmor.ru/'>https://hpmor.ru/</a>)
+      </RefBlock>
     </Layout>
   )
 }
